@@ -1,20 +1,18 @@
 package dogs;
 
-public abstract class TrainedDog <P> extends Dog{
+public class TrainedDog <P> extends Dog{
 
     private String name;
-    private P dogType;
     private Double price;
 
-    public TrainedDog(String name, P dogType, Double price, EnergyLevel energyLevel, BarkLevel barkLevel, HairType hairType, Size size) {
+    public TrainedDog(String name, Double price, EnergyLevel energyLevel, BarkLevel barkLevel, HairType hairType, Size size) {
         super(energyLevel, barkLevel, hairType, size);
         this.name = name;
-        this.dogType = dogType;
         this.price = price;
     }
 
 
     public String meetDog(){
-        return "Hi, My name is " + name + "I am a "+ dogType + "dog.";
+        return "Hi, My name is " + name;
     }
 }

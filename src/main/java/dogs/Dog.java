@@ -31,7 +31,12 @@ public abstract class Dog {
 
     @Override
     public String toString() {
-        String output = "Hi!";
-        return output;
+        return "Dog{" +
+                "energyLevel=" + energyLevel +
+                ", barkLevel=" + barkLevel +
+                ", hairType=" + hairType +
+                ", size=" + size +
+                '}';
     }
 }
+

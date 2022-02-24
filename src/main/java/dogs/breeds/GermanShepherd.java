@@ -4,8 +4,9 @@ import dogs.*;
 
 public class GermanShepherd <P> extends TrainedDog<P> implements GuardDog<P>, GuideDog<P>, TherapyComfortDog<P> {
 
-    public GermanShepherd(String name, P dogType, Double price, EnergyLevel energyLevel, BarkLevel barkLevel, HairType hairType, Size size) {
-        super(name, dogType, price, energyLevel, barkLevel, hairType, size);
+
+    public GermanShepherd(String name, Double price, EnergyLevel energyLevel, BarkLevel barkLevel, HairType hairType, Size size) {
+        super(name, price, energyLevel, barkLevel, hairType, size);
     }
 
     public String meetDog(){
