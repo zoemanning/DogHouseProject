@@ -1,10 +1,10 @@
 package people;
 
-public class Customer <D> extends Person{
+public class Customer <P> extends Person{
 
-    private D item;
+    private P pet;
 
-    public Customer(String firstName, String lastName, D item) {
+    public Customer(String firstName, String lastName, P pet) {
         super(firstName, lastName);
 
     }
