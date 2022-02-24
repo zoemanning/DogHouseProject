@@ -3,13 +3,14 @@ package store;
 import dogs.breeds.Boxer;
 import org.testng.annotations.Test;
 import people.Customer;
+import petshop.Store;
 
 public class StoreTest {
 
     @Test
-    public void hireTest01(){
-        Customer<Boxer> employee = new Employee<>("Joe", "Jackson", 38, new Shoe());
-        Store<Employee<Shoe>, Shoe> store = new Store<>();
-        store.hireEmployee(employee);
+    public void addDogTest(){
+        Customer<Boxer> customer = new Customer<>("Dolly", "Jordan", new Boxer());
+        Store<Customer<Boxer>, Boxer> store = new Store<>();
+        store.addDogs(customer);
     }
 }
