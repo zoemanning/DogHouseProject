@@ -1,6 +1,9 @@
 package people;
 
 public enum Job {
-    GROOMER, CASHIER, FEEDER
+    GROOMER("Groomer"), CASHIER("Cashier"), FEEDER("Feeder");
+
+    Job(String s){
+    }
 }
 

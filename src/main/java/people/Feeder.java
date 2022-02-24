@@ -1,4 +1,5 @@
 package people;
 
-public interface Feeder {
+public interface Feeder<D> {
+    void feedDog();
 }
