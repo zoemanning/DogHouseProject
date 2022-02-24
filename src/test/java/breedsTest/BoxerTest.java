@@ -7,18 +7,21 @@ import org.junit.jupiter.api.Test;
 
 public class BoxerTest {
     @Test
-    public void guardPropertyTest(){
-        FamilyDog<Boxer> boxer = new FamilyDog<>("Boxy",50.0, EnergyLevel.HIGH, BarkLevel.MEDIUM_BARK, HairType.SHORT, Size.LARGE);
+    public void guardPropertyTest() {
+        FamilyDog<Boxer> boxer = new FamilyDog<>("Boxy", 50.0, EnergyLevel.HIGH, BarkLevel.MEDIUM_BARK, HairType.SHORT, Size.LARGE);
 
         String expected = "Dog{" +
-                "energyLevel=" + "High Energy" +
-                ", barkLevel=" + "Medium Bark Level" +
-                ", hairType=" + "Short Haired" +
-                ", size=" + "Large" +
+                "energyLevel=" + "HIGH" +
+                ", barkLevel=" + "MEDIUM_BARK" +
+                ", hairType=" + "SHORT" +
+                ", size=" + "LARGE" +
                 '}';
         String actual = boxer.toString();
-        Assertions.assertEquals(expected,actual);
 
-
+        Assertions.assertEquals(expected, actual);
     }
+
+
+
+
 }
