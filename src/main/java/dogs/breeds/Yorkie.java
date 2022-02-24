@@ -2,14 +2,18 @@ package dogs.breeds;
 
 import dogs.*;
 
-public class Yorkie <D> implements HoseBroken<D> {
+public class Yorkie <P> extends FamilyDog<P> implements HoseBroken<P> {
+
+    public Yorkie(String name, Double price, EnergyLevel energyLevel, BarkLevel barkLevel, HairType hairType, Size size) {
+        super(name, price, energyLevel, barkLevel, hairType, size);
+    }
 
     public String meetDog(){
         return "Hi, I'm adorable";
     }
 
     @Override
-    public String notifyOwner(D dog) {
+    public String notifyOwner(P dog) {
         return "I have to go";
     }
 }

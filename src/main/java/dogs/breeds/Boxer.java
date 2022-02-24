@@ -4,8 +4,9 @@ import dogs.*;
 
 public class Boxer <P> extends FamilyDog<P> implements GuardDog<P> {
 
-    public Boxer(String name, P dogType, Double price, EnergyLevel energyLevel, BarkLevel barkLevel, HairType hairType, Size size) {
-        super(name, dogType, price, energyLevel, barkLevel, hairType, size);
+
+    public Boxer(String name, Double price, EnergyLevel energyLevel, BarkLevel barkLevel, HairType hairType, Size size) {
+        super(name, price, energyLevel, barkLevel, hairType, size);
     }
 
     public String meetDog(){
