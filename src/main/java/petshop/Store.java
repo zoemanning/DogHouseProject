@@ -19,7 +19,7 @@ public class Store<E, D> {
 
     public D sell() throws Exception {
         if (dogs.isEmpty())
-            throw new Exception("No more inventory");
+            throw new Exception("No more dogs");
         return dogs.remove(0);
     }
 

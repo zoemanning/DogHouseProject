@@ -12,7 +12,7 @@ public class BichonFrise <P> extends FamilyDog<P> implements HypoAllergenic <P> 
         return "Hi, I'm adorable";
     }
     @Override
-    public void doNotShed(P dog) {
-        System.out.println("I got your allergies");
+    public String doNotShed(P dog) {
+        return"I got your allergies";
     }
 }

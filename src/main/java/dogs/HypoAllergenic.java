@@ -1,5 +1,5 @@
 package dogs;
 
 public interface HypoAllergenic <P> {
-    void doNotShed(P dog);
+    String doNotShed(P dog);
 }

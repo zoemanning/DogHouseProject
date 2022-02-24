@@ -13,12 +13,12 @@ public class GoldenRetriever <P> extends TrainedDog<P> implements TherapyComfort
     }
 
     @Override
-    public void guideOwner(P dog) {
-        System.out.println("Follow me");
+    public String guideOwner(P dog) {
+        return "Follow me";
     }
 
     @Override
-    public void comfortOwner(P dog) {
-        System.out.println("I'm here for you");
+    public String comfortOwner(P dog) {
+        return "I'm here for you";
     }
 }
