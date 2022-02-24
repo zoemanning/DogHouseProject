@@ -1,16 +1,16 @@
 package people;
 
-public class Employee <D> extends Person{
+public class Employee <P> extends Person{
     private static Integer idCount = 0;
     private Integer id;
     private Job job;
-    private D item;
+    private P pet;
 
-    public Employee(String firstName, String lastName, Integer id, Job job, D item) {
+    public Employee(String firstName, String lastName, Integer id, Job job, P pet) {
         super(firstName, lastName);
         id = ++idCount;
         this.job = job;
-        this.item = item;
+        this.pet = pet;
     }
 
 

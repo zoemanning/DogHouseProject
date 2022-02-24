@@ -2,10 +2,10 @@ package petshop;
 
 import java.util.ArrayList;
 
-public class Store<E, D> {
+public class Store<E, P> {
 
     private ArrayList<E> employees;
-    private ArrayList<D> dogs;
+    private ArrayList<P> dogs;
 
     public Store() {
         employees = new ArrayList<>();
@@ -17,15 +17,15 @@ public class Store<E, D> {
         employees.add(employee);
     }
 
-    public D sell() throws Exception {
+    public P sell() throws Exception {
         if (dogs.isEmpty())
             throw new Exception("No more dogs");
         return dogs.remove(0);
     }
 
-    public void addDogs(D item) {
+    public void addDogs(P pet) {
 
-        dogs.add(item);
+        dogs.add(pet);
     }
 
 
