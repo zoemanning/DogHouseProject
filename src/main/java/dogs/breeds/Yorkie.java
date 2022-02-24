@@ -9,7 +9,7 @@ public class Yorkie <D> implements HoseBroken<D> {
     }
 
     @Override
-    public void notifyOwner(D dog) {
-        System.out.println("I have to go");
+    public String notifyOwner(D dog) {
+        return "I have to go";
     }
 }

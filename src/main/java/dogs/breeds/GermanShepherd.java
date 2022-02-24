@@ -13,17 +13,17 @@ public class GermanShepherd <P> extends TrainedDog<P> implements GuardDog<P>, Gu
     }
 
     @Override
-    public void guardProperty(P dog) {
-        System.out.println("I will protect you");
+    public String guardProperty(P dog) {
+        return"I will protect you";
     }
 
     @Override
-    public void guideOwner(P dog) {
-        System.out.println("Follow me");
+    public String guideOwner(P dog) {
+        return "Follow me";
     }
 
     @Override
-    public void comfortOwner(P dog) {
-        System.out.println("I'm here for you");
+    public String comfortOwner(P dog) {
+        return "I'm here for you";
     }
 }

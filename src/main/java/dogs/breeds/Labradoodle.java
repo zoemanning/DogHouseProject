@@ -13,7 +13,7 @@ public class Labradoodle <P> extends FamilyDog<P> implements HypoAllergenic<P> {
     }
 
     @Override
-    public void doNotShed(P dog) {
-        System.out.println("I got your allergies");
+    public String doNotShed(P dog) {
+        return "I got your allergies";
     }
 }

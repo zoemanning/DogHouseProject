@@ -1,5 +1,5 @@
 package dogs;
 
 public interface HoseBroken <P> {
-    void notifyOwner(P dog);
+    String notifyOwner(P dog);
 }

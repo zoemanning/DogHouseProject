@@ -13,7 +13,7 @@ public class PitBull <P> extends TrainedDog<P> implements GuardDog<P> {
     }
 
     @Override
-    public void guardProperty(P dog) {
-        System.out.println("I will protect you");
+    public String guardProperty(P dog) {
+        return "I will protect you";
     }
 }
