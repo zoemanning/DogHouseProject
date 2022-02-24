@@ -1,4 +1,5 @@
 package people;
 
-public interface Groomer {
+public interface Groomer<D> {
+    void groomDog();
 }
