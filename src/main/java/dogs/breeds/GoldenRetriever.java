@@ -9,10 +9,6 @@ public class GoldenRetriever <P> extends TrainedDog<P> implements TherapyComfort
         super(name, price, energyLevel, barkLevel, hairType, size);
     }
 
-    public String meetDog(){
-        return "Hi, I'm adorable";
-    }
-
     @Override
     public String guideOwner(P dog) {
         return "Follow me";

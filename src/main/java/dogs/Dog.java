@@ -1,6 +1,7 @@
 package dogs;
 
 public abstract class Dog {
+
     private EnergyLevel energyLevel;
     private BarkLevel barkLevel;
     private HairType hairType;
@@ -12,6 +13,7 @@ public abstract class Dog {
         this.hairType = hairType;
         this.size = size;
     }
+
 
     public EnergyLevel getEnergyLevel() {
         return energyLevel;

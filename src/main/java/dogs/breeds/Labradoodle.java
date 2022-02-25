@@ -9,10 +9,6 @@ public class Labradoodle <P> extends FamilyDog<P> implements HypoAllergenic<P> {
         super(name, price, energyLevel, barkLevel, hairType, size);
     }
 
-    public String meetDog(){
-        return "Hi, I'm adorable";
-    }
-
     @Override
     public String doNotShed(P dog) {
         return "I got your allergies";

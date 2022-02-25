@@ -9,10 +9,6 @@ public class Mastiff <P> extends FamilyDog<P> implements GuardDog<P> {
         super(name, price, energyLevel, barkLevel, hairType, size);
     }
 
-    public String meetDog(){
-        return "Hi, I'm adorable";
-    }
-
     @Override
     public String guardProperty(P dog) {
         return"I will protect you";

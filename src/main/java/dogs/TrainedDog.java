@@ -1,6 +1,6 @@
 package dogs;
 
-public class TrainedDog <P> extends Dog{
+public class TrainedDog <P> extends Dog {
 
     private String name;
     private Double price;
@@ -11,8 +11,20 @@ public class TrainedDog <P> extends Dog{
         this.price = price;
     }
 
+    public String getName() {
+        return name;
+    }
 
-    public String meetDog(){
-        return "Hi, My name is " + name;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+
+    public String meetDog() {
+        return "Hi, I'm " + name;
     }
 }

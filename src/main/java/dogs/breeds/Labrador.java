@@ -9,10 +9,6 @@ public class Labrador <P> extends TrainedDog<P> implements GuideDog<P>, TherapyC
         super(name, price, energyLevel, barkLevel, hairType, size);
     }
 
-    public String meetDog(){
-        return "Hi, I'm adorable";
-    }
-
     @Override
     public String guideOwner(P dog) {
         return "Follow me";
