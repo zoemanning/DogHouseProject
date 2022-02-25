@@ -11,8 +11,28 @@ public class FamilyDog <P> extends Dog{
         this.price = price;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
 
     public String meetDog(){
-        return "Hi, My name is " + name;
+        return "Hi, I'm " + name;
+    }
+
+    @Override
+    public String toString() {
+        return "FamilyDog{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                '}';
     }
 }

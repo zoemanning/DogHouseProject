@@ -20,4 +20,11 @@ public class StoreTest {
         store.hireEmployee(employee);
     }
 
+    @Test
+    public void hireEmployeeTest01(){
+        Employee<BichonFrise> employee = new Employee<>("Joe", "Jackson", 1, Job.CASHIER, new BichonFrise("Bella", 2000.00, EnergyLevel.LOW, BarkLevel.SMALL_BARK, HairType.HAIRLESS, Size.SMALL)); ;
+        Store<Employee<BichonFrise>, BichonFrise> store = new Store<>();
+        store.hireEmployee(employee);
+    }
+
 }

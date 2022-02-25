@@ -8,10 +8,6 @@ public class Yorkie <P> extends FamilyDog<P> implements HoseBroken<P> {
         super(name, price, energyLevel, barkLevel, hairType, size);
     }
 
-    public String meetDog(){
-        return "Hi, I'm adorable";
-    }
-
     @Override
     public String notifyOwner(P dog) {
         return "I have to go";
