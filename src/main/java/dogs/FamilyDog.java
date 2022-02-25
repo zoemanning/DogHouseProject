@@ -11,6 +11,9 @@ public class FamilyDog <P> extends Dog{
         this.price = price;
     }
 
+    public String getDogName(){
+        return name;
+    }
 
     public String meetDog(){
         return "Hi, My name is " + name;

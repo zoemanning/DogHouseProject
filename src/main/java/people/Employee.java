@@ -8,13 +8,19 @@ public class Employee <P> extends Person{
 
     public Employee(String firstName, String lastName, Integer id, Job job, P pet) {
         super(firstName, lastName);
-        id = ++idCount;
+        this.id = id;
         this.job = job;
         this.pet = pet;
     }
+    public Employee(){
+        
+    }
 
+    public Employee(String firstName, String lastName, Integer id, Job job) {
+    }
 
     public Integer getId() {
+        id = ++idCount;
         return id;
     }
 

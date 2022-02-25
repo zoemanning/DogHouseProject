@@ -17,7 +17,7 @@ public class Store<E, P> {
         employees.add(employee);
     }
 
-    public P sell() throws Exception {
+    public P sellDog() throws Exception {
         if (dogs.isEmpty())
             throw new Exception("No more dogs");
         return dogs.remove(0);
