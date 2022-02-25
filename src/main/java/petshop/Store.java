@@ -24,7 +24,6 @@ public class Store<E, P> {
     }
 
     public void addDogs(P pet) {
-
         dogs.add(pet);
     }
 

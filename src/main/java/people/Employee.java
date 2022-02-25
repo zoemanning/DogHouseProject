@@ -13,7 +13,7 @@ public class Employee <P> extends Person{
         this.pet = pet;
     }
     public Employee(){
-        
+
     }
 
     public Employee(String firstName, String lastName, Integer id, Job job) {

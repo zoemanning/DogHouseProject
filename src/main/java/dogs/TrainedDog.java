@@ -27,4 +27,12 @@ public class TrainedDog <P> extends Dog {
     public String meetDog() {
         return "Hi, I'm " + name;
     }
+
+    @Override
+    public String toString() {
+        return "TrainedDog{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                '}';
+    }
 }
